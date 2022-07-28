@@ -2,7 +2,7 @@
   "name": "virtual-tour",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://HansieAloj.github.io/virtual-tour-site",
+  "homepage": "https://HansieAloj.github.io/virtual-tour-site",
   
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
