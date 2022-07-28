@@ -1,0 +1,10 @@
+.Explore {
+    background-image: url(../../public/images/explore3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ButtonGroup {
+    display: flex;
+    font-weight: bold;
+}
