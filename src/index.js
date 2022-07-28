@@ -36,7 +36,7 @@ const routing = (
     <Header/>
 
     <Routes>
-        <Route exact path="/" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/explore" element={<Explore/>} />
         <Route path="/regions" element={<Regions/>} />
         <Route path="/about" element={<About1/>} />
