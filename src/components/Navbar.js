@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar, Nav, Button } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import logo from "../images/logo.jpg"
 
 const Header = () => {
     return (
@@ -8,7 +9,7 @@ const Header = () => {
             <LinkContainer to="/" className='ms-3'>
                 <Navbar.Brand>
                     <img
-                        src="./images/logo.jpg"
+                        src={logo}
                         width="100"
                         className="d-inline-block align-top"
                         alt="React Bootstrap logo"

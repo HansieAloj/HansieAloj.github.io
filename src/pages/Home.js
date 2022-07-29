@@ -16,6 +16,14 @@ import CarouselComponent from '../components/Carousel';
 import Card from 'react-bootstrap/Card';
 import { Badge } from 'react-bootstrap';
 
+import img0 from "../images/carousel/img0.jpg"
+import img1 from "../images/carousel/img1.jpg"
+import img2 from "../images/carousel/img2.jpg"
+import img3 from "../images/carousel/img3.jpg"
+
+import statueOfLiberty from "../images/topRated/statueOfLiberty.jpg"
+import tajMahal from "../images/topRated/tajMahal.jpg"
+import niagaraFalls from "../images/topRated/niagaraFalls.jpg"
 
 
 
@@ -24,10 +32,10 @@ import { Badge } from 'react-bootstrap';
 function Home() {
 
     var myObject = {
-        0 : {img: "./images/carousel/img0.jpg", title: "Islands", desc:'No matter where they are in the world, islands make everyone happy and calm.'},
-        1 : {img: "./images/carousel/img1.jpg", title: "Mountains", desc:'“The mountains are calling, and I must go.” John Muir perfectly sums up our feelings about these majestic natural wonders. Mountains have always been a source of awe and beauty, and sometimes we don\'t have the words to capture how much we admire them.'},
-        2 : {img: "./images/carousel/img2.jpg", title: "Beaches", desc:'There’s nothing like a relaxing day at the beach to soak up all your worries. Just closing your eyes and imagining the soft sand caressing your toes as gentle waves lap the shore and the sun shines warmly down is enough to bring about a feeling of tranquillity.'},
-        4 : {img: "./images/carousel/img3.jpg", title: "Waterfalls", desc:'Roaring and powerful, yet serene and calming, waterfalls are one of nature’s most magical creations. “There\'s no better place to find yourself than sitting by a waterfall and listening to its music” ― Roland R Kemler'},
+        0 : {img: img0, title: "Islands", desc:'No matter where they are in the world, islands make everyone happy and calm.'},
+        1 : {img: img1, title: "Mountains", desc:'“The mountains are calling, and I must go.” John Muir perfectly sums up our feelings about these majestic natural wonders. Mountains have always been a source of awe and beauty, and sometimes we don\'t have the words to capture how much we admire them.'},
+        2 : {img: img2, title: "Beaches", desc:'There’s nothing like a relaxing day at the beach to soak up all your worries. Just closing your eyes and imagining the soft sand caressing your toes as gentle waves lap the shore and the sun shines warmly down is enough to bring about a feeling of tranquillity.'},
+        4 : {img: img3, title: "Waterfalls", desc:'Roaring and powerful, yet serene and calming, waterfalls are one of nature’s most magical creations. “There\'s no better place to find yourself than sitting by a waterfall and listening to its music” ― Roland R Kemler'},
     };
 
   return (
@@ -108,7 +116,7 @@ function Home() {
         <div class="Cards">
 
         <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="./images/topRated/statueOfLiberty.jpg" class="cardImage"/>
+            <Card.Img variant="top" src={statueOfLiberty} class="cardImage"/>
             <Card.Body>
                 <Card.Title>The Statue of Liberty</Card.Title>
                 <Card.Text>
@@ -126,7 +134,7 @@ function Home() {
             </Card>
 
             <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="./images/topRated/tajMahal.jpg" class="cardImage"/>
+            <Card.Img variant="top" src={tajMahal} class="cardImage"/>
             <Card.Body>
                 <Card.Title>Taj Mahal</Card.Title>
                 <Card.Text>
@@ -148,7 +156,7 @@ function Home() {
             </Card>
 
             <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="./images/topRated/niagaraFalls.jpg" class="cardImage"/>
+            <Card.Img variant="top" src={niagaraFalls} class="cardImage"/>
             <Card.Body>
                 <Card.Title>Niagara Falls</Card.Title>
                 <Card.Text>

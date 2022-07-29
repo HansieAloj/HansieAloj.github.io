@@ -1,6 +1,8 @@
 import './Footer.css'
 import React from 'react';
 import { CDBFooter, CDBFooterLink, CDBBtn, CDBIcon, CDBContainer, CDBBox } from 'cdbreact';
+import logo from "../images/logo.jpg"
+
 
 export const Footer = () => {
   return (
@@ -17,7 +19,7 @@ export const Footer = () => {
           <a href="/" className="d-flex align-items-center p-0 text-dark">
             <img
               alt="logo"
-              src="./images/logo.jpg"
+              src={logo}
               width="100px"
             />
             <div class="space"/>
