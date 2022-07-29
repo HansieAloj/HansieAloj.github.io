@@ -14,6 +14,7 @@ import CarouselComponent from '../components/Carousel';
 import Card from 'react-bootstrap/Card';
 import { Badge } from 'react-bootstrap';
 
+import about2 from "../images/about2.jpg"
 
 
 function About1() {
@@ -48,7 +49,7 @@ function About1() {
         <div class="container-fluid bg-grey divSolidContainer">
           <div class="row">
             <div class="col-sm-6">
-              <img style={{ width: "100%" }} class="mt-4" src="./images/about2.jpg" />
+              <img style={{ width: "100%" }} class="mt-4" src={about2} />
             </div>
             <div class="col-sm-6">
               <br />

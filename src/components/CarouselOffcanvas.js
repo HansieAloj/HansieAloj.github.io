@@ -9,6 +9,8 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { render } from '@testing-library/react';
 import { Component } from 'react';
 
+// import greatWall1 from "../images/explore/SevenWondersWorld/greatWall.jpg"
+
 
 class CarouselOffcanvasComponent extends Component {
     constructor() {
@@ -22,17 +24,16 @@ class CarouselOffcanvasComponent extends Component {
 
     render(){
     var myObj = this.props.obj;
-    console.log(myObj)
+    // console.log(myObj)
     return (
         <Carousel fade variant="dark">
             {myObj.img.map((i) => {
-
                 return(
                     <Carousel.Item>
                         <img
                         className="d-block w-100 images"
                         src={i}
-                        alt="Carousal Image"
+                        alt="Carousel Image"
                         />
                         <Carousel.Caption className="carouselCaption">
                             <h3>{myObj.title}</h3>
