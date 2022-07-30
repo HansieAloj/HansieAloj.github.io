@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/virtual-tour-site/static/css/main.d142a489.css",
-    "main.js": "/virtual-tour-site/static/js/main.839fb3bf.js",
+    "main.css": "/virtual-tour-site/static/css/main.9631da25.css",
+    "main.js": "/virtual-tour-site/static/js/main.98c900b4.js",
     "static/media/auroraBorealis.jpg": "/virtual-tour-site/static/media/auroraBorealis.ad90efb366ecfe8eccab.jpg",
     "static/media/greatBarrierReef3.png": "/virtual-tour-site/static/media/greatBarrierReef3.d1667b15729fdb2c84fd.png",
     "static/media/auroraBorealis3.jpg": "/virtual-tour-site/static/media/auroraBorealis3.cef7b097b6b494664a53.jpg",
@@ -10,6 +10,7 @@
     "static/media/harborRio.jpg": "/virtual-tour-site/static/media/harborRio.06d69d1e17f5a31d8db7.jpg",
     "static/media/grandCanyon.jpg": "/virtual-tour-site/static/media/grandCanyon.e0aadeb28478d07906bd.jpg",
     "static/media/greatWall3.jpg": "/virtual-tour-site/static/media/greatWall3.ade43e72c96b92be334f.jpg",
+    "static/media/explore4.jpg": "/virtual-tour-site/static/media/explore4.15a8cf8f36e8e4becd00.jpg",
     "static/media/grandCanyon2.jpg": "/virtual-tour-site/static/media/grandCanyon2.71b829b46afdcd70cf5a.jpg",
     "static/media/chichen2.jpg": "/virtual-tour-site/static/media/chichen2.367b431a0161df02816d.jpg",
     "static/media/greatBarrierReef.jpg": "/virtual-tour-site/static/media/greatBarrierReef.8b828a6e468787192330.jpg",
@@ -76,11 +77,11 @@
     "static/media/revicons.woff": "/virtual-tour-site/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/logo.svg": "/virtual-tour-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/virtual-tour-site/index.html",
-    "main.d142a489.css.map": "/virtual-tour-site/static/css/main.d142a489.css.map",
-    "main.839fb3bf.js.map": "/virtual-tour-site/static/js/main.839fb3bf.js.map"
+    "main.9631da25.css.map": "/virtual-tour-site/static/css/main.9631da25.css.map",
+    "main.98c900b4.js.map": "/virtual-tour-site/static/js/main.98c900b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d142a489.css",
-    "static/js/main.839fb3bf.js"
+    "static/css/main.9631da25.css",
+    "static/js/main.98c900b4.js"
   ]
 }
