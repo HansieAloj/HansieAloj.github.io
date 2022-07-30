@@ -16,113 +16,157 @@ import CarouselModalComponent from '../components/CarouselModal';
 import CarouselCardComponent from '../components/CarouselCards';
 import MultiCarouselComponent from '../components/MultiCarousel.js';
 
+import Accordion from 'react-bootstrap/Accordion';
 
 
-
-const responsive = {
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 3,
-        slidesToSlide: 3 // optional, default to 1.
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2,
-        slidesToSlide: 2 // optional, default to 1.
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-        slidesToSlide: 1 // optional, default to 1.
-    }
-};
 
 
 function Regions() {
 
-    var myObject = {
-        0: { img: "./images/carousel/img0.jpg", title: "Islands", desc: 'No matter where they are in the world, islands make everyone happy and calm.' },
-        1: { img: "./images/carousel/img1.jpg", title: "Mountains", desc: '“The mountains are calling, and I must go.” John Muir perfectly sums up our feelings about these majestic natural wonders. Mountains have always been a source of awe and beauty, and sometimes we don\'t have the words to capture how much we admire them.' },
-        2: { img: "./images/carousel/img2.jpg", title: "Beaches", desc: 'There’s nothing like a relaxing day at the beach to soak up all your worries. Just closing your eyes and imagining the soft sand caressing your toes as gentle waves lap the shore and the sun shines warmly down is enough to bring about a feeling of tranquillity.' },
-        4: { img: "./images/carousel/img3.jpg", title: "Waterfalls", desc: 'Roaring and powerful, yet serene and calming, waterfalls are one of nature’s most magical creations. “There\'s no better place to find yourself than sitting by a waterfall and listening to its music” ― Roland R Kemler' },
-    };
-
     return (
+
         <div class="Regions">
+            <br/>
+            <div class="regionDiv">
+            <br/>
+            <h1 class="banner">Incredible India!</h1>
 
-            <h1 class="banner">Popular Landscapes</h1>
-            <br />
+                <br/>
+                <div class="video">
+                    <div className="video-responsive">
+                        <iframe
+                            width="853"
+                            height="480"
+                            src="https://www.youtube.com/embed/VVsC2fD1BjA"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            title="Embedded youtube"
+                        />
+                    </div>
+                </div>
 
-            {/* <div class="Carousel">
-            <CarouselOffcanvasComponent obj={myObject}/>
-        </div> */}
+                <br/>
+                <div class="info">
+                    <br/>
+                    <Button className='buttonAcc' variant="dark" href='https://www.incredibleindia.org/content/incredible-india-v2/en.html' target='_blank'><b>More Info</b></Button>
+                    <br/>
 
-            {/* <div class="Carousel">
-            <CarouselModalComponent obj={myObject}/>
-        </div> */}
+                    <br/>
+                    <Accordion defaultActiveKey="0" className="accordian">
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header><b>Why Travel to India?</b></Accordion.Header>
+                            <Accordion.Body className="accordianItem">
+                            India is a land that has a rich ancient history and deep cultural roots. A visit to India is unlike any other place one can visit in the world. Indian customs and traditions have been revered by most of the travelers who have visited the country and the vast range of geographical locations in India has made it one of the top tourist destinations. While traveling in India has often being stereotyped by the lack of civic facilities and is considered more of a backpacker destination, it can be done lavishly as well as cheaply. Here are 10 reasons why you might want to visit India.
+                            <br/><br/>
+                                <ul>
+                                    <li>Huge Number of Tourist Places</li>
+                                    <li>Incredible HISTORY</li>
+                                    <li>Diverse Culture</li>
+                                    <li>Indian Architecture</li>
+                                    <li>Indian Food</li>
+                                    <li>Indian Music</li>
+                                    <li>Indian Dance</li>
+                                    <li>Festivals and Fairs</li>
+                                    <li>Spiritual Experience</li>
+                                </ul>
+                            </Accordion.Body>
+                        </Accordion.Item>
 
-            {/* <div class="Carousel">
-            <CarouselCardComponent obj={myObject}/>
-        </div> */}
-
-            <div class="Carousel">
-                <MultiCarouselComponent />
+                        <Accordion.Item eventKey="2">
+                            <Accordion.Header><b>Did You Know???</b></Accordion.Header>
+                            <Accordion.Body className="accordianItem">
+                                <ul>
+                                    <li>INDIA HAS THE SECOND HIGHEST POPULATION IN THE WORLD</li>
+                                    <li>THE CITY OF VARANASI IS BELIEVED TO BE ONE OF THE OLDEST LIVING CITIES IN THE WORLD</li>
+                                    <li>CHENAB BRIDGE IS THE HIGHEST RAIL BRIDGE IN THE WORLD</li>
+                                    <li>INDIA IS HOME TO THE WETTEST INHABITED PLACE ON EARTH</li>
+                                    <li>ABOUT 70% OF THE WORLD’S SPICES COME FROM INDIA</li>
+                                    <li>THE HIGHEST CRICKET GROUND IN THE WORLD IS FOUND HERE</li>
+                                    <li>THE BENGAL TIGER IS INDIA’S NATIONAL ANIMAL</li>
+                                    <li>KUMBH MELA GATHERING VISIBLE FROM SPACE</li>
+                                    <li>INDIA WAS THE FIRST COUNTRY TO MINE DIAMONDS</li>
+                                </ul>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                    <br/>
+                </div>
+                <br/>
             </div>
+            <br/>
 
-            <br /><br />
-            <h1 class="banner">Top Rated Places</h1>
 
-            <div class="Cards">
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="./images/topRated/tajMahal.jpg" class="cardImage" />
-                    <Card.Body>
-                        <Card.Title>Taj Mahal</Card.Title>
-                        <Card.Text>
-                            Taj Mahal represents the finest architectural and artistic achievement through perfect harmony and excellent craftsmanship. It is a masterpiece of architectural style in conception, treatment and execution.
-                        </Card.Text>
-                        <Button variant="primary">View</Button>
-                        <div class="space" />
-                        <Button variant="info">
-                            Rating <Badge bg="dark">4.6⭐</Badge>
-                            <span className="visually-hidden">unread messages</span>
-                        </Button>
-                    </Card.Body>
-                </Card>
+            <br/>
+            <div class="regionDiv">
+            <br/>
+            <h1 class="banner">America</h1>
 
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="./images/topRated/statueOfLiberty.jpg" class="cardImage" />
-                    <Card.Body>
-                        <Card.Title>The Statue of Liberty</Card.Title>
-                        <Card.Text>
-                            The Statue of Liberty is one of the most well-known and beloved monuments in America. It stands to welcome in immigrants to New York Harbor and to let people who are returning home know that they have reached America.
-                        </Card.Text>
-                        <Button variant="primary">View</Button>
-                        <div class="space" />
-                        <Button variant="info">
-                            Rating <Badge bg="dark">4.7⭐</Badge>
-                            <span className="visually-hidden">unread messages</span>
-                        </Button>
-                    </Card.Body>
-                </Card>
+                <br/>
+                <div class="video">
+                    <div className="video-responsive">
+                        <iframe
+                            width="853"
+                            height="480"
+                            src="https://www.youtube.com/embed/4Z9mUjtFJYY"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            title="Embedded youtube"
+                        />
+                    </div>
+                </div>
 
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="./images/topRated/niagaraFalls.jpg" class="cardImage" />
-                    <Card.Body>
-                        <Card.Title>Niagara Falls</Card.Title>
-                        <Card.Text>
-                            What makes Niagara Falls so impressive is the amount of water flowing over. Most of the tallest falls in the world have very little water flowing over them. It's the combination of height and volume that makes Niagara Falls so breathtaking.
-                        </Card.Text>
-                        <Button variant="primary" className="CardButton">View</Button>
-                        <div class="space" />
-                        <Button variant="info">
-                            Rating <Badge bg="dark">4.8⭐</Badge>
-                            <span className="visually-hidden">unread messages</span>
-                        </Button>
-                    </Card.Body>
-                </Card>
+                <br/>
+                <div class="info">
+                    <br/>
+                    <Button className='buttonAcc' variant="dark" href='https://www.gousa.in/' target='_blank'><b>More Info</b></Button>
+                    <br/>
+
+                    <br/>
+                    <Accordion defaultActiveKey="0" className="accordian">
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header><b>Why Travel to USA?</b></Accordion.Header>
+                            <Accordion.Body className="accordianItem">
+                            The USA is known for its iconic landmarks – The Statue of Liberty, Hollywood Sign, Golden Gate Bridge – but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty. That's 50 states that serve up unique holiday experiences and provide endless options for every type of traveller. 
+                            <br/><br/>
+                            It doesn't matter if you're visiting for the first time or returning for another go, you're sure to leave with plenty of unforgettable moments. It is the perfect holiday destination and here are just 10 reasons to start planning your next trip:  
+                                <br/><br/>
+                                <ul>
+                                    <li>The National Parks</li>
+                                    <li>The Road Trips</li>
+                                    <li>The Theme Parks</li>
+                                    <li>Southern Hospitality</li>
+                                    <li>The Pacific North West</li>
+                                    <li>The Museums are Plentiful and Interesting</li>
+                                    <li>Style is always evolving</li>
+                                    <li>The scenic views</li>
+                                    <li>The Great Smoky Mountains</li>
+                                </ul>
+                            </Accordion.Body>
+                        </Accordion.Item>
+
+                        <Accordion.Item eventKey="2">
+                            <Accordion.Header><b>Did You Know???</b></Accordion.Header>
+                            <Accordion.Body className="accordianItem">
+                                <ul>
+                                    <li>The US Has The Largest Economy In The World</li>
+                                    <li>The US Has The 4th Longest River System In The World</li>
+                                    <li>It is the Home To Some of The Best Musical Artist Of All Time</li>
+                                    <li>Las Vegas Is The Gambling Capital Of The World</li>
+                                    <li>There Is a City Named Boring And It’s In Oregon</li>
+                                    <li>The US Doesn’t Have An Official Language</li>
+                                    <li>Alaska Has The Longest Coastline In The US</li>
+                                    <li>The Statue Of Liberty Was A Gift</li>
+                                    <li>The current US flag was designed by a 17-year-old</li>
+                                </ul>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                    <br/>
+                </div>
+                <br/>
             </div>
-
-            <Footer class="Footer" />
         </div>
     );
 }

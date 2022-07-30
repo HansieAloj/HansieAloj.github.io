@@ -30,8 +30,8 @@ const Header = () => {
                         </Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/regions">
-                        <Nav.Link disabled>
-                            <Button variant="outline-primary" disabled>Regions</Button>
+                        <Nav.Link>
+                            <Button variant="outline-primary">Regions</Button>
                         </Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/about">
@@ -40,8 +40,8 @@ const Header = () => {
                         </Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/contact">
-                        <Nav.Link disabled>
-                            <Button variant="outline-primary" disabled>Contact Us</Button>
+                        <Nav.Link>
+                            <Button variant="outline-primary">Contact Us</Button>
                         </Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/login" className='justify-content-end'>
