@@ -10,6 +10,13 @@ import { Footer } from '../components/Footer.js';
 
 import CarouselOffcanvasComponent from '../components/CarouselOffcanvas';
 
+import React from 'react';
+import Tada from 'react-reveal/Tada';
+import Wobble from 'react-reveal/Wobble';
+import Spin from 'react-reveal/Spin';
+
+
+
 import { useState } from 'react';
 import Row from 'react-bootstrap/esm/Row';
 import Toast from 'react-bootstrap/Toast';
@@ -187,8 +194,8 @@ function Explore() {
     <div class="Explore">
 
 
-        <Row class="center">
-        {/* <Button onClick={() => setShowToast(!showToast)}>📝 Tool Tip</Button> */}
+        {/* <Row class="center">
+        <Spin>
             <Toast onClose={() => setShowToast(false)} show={showToast} delay={5000} bg="light" autohide>
                 <Toast.Header>
                     <img
@@ -200,9 +207,12 @@ function Explore() {
                 </Toast.Header>
                 <Toast.Body>Click the Buttons on any Carousel Image to Access more Information.</Toast.Body>
             </Toast>
-        </Row>
+            </Spin>
+        </Row> */}
 
+        <Tada>
         <h1 class="banner">Seven Wonders of the World</h1>
+        </Tada>
 
         <ButtonGroup aria-label="Quick Traverse" className="ButtonGroup">
             <Button variant="dark" href='#greatWall'>Great Wall of China</Button>

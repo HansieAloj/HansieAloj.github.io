@@ -16,6 +16,12 @@ import CarouselComponent from '../components/Carousel';
 import Card from 'react-bootstrap/Card';
 import { Badge } from 'react-bootstrap';
 
+import React from 'react';
+import Zoom from 'react-reveal/Zoom';
+import LightSpeed from 'react-reveal/LightSpeed';
+import Tada from 'react-reveal/Tada';
+
+
 import img0 from "../images/carousel/img0.jpg"
 import img1 from "../images/carousel/img1.jpg"
 import img2 from "../images/carousel/img2.jpg"
@@ -102,18 +108,26 @@ function Home() {
             </Navbar>
         </div> */}
 
+        <Tada>
         <h1 class="banner">Popular Landscapes</h1>
+        </Tada>
         <br/>
 
+        <Zoom left>
         <div class="Carousel">
             {/* <CarouselComponent src="./images/explore/SevenWonders/tajMahal1.jpg"/> */}
             <CarouselComponent obj={myObject}/>
         </div>
+        </Zoom>
 
         <br/><br/>
+        <Tada>
         <h1 class="banner">Top Rated Places</h1>
+        </Tada>
 
         <div class="Cards">
+        <LightSpeed left>
+
 
         <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={statueOfLiberty} class="cardImage"/>
@@ -172,6 +186,8 @@ function Home() {
                 </Button>
             </Card.Body>
             </Card>
+            </LightSpeed>
+
         </div>
 
         <Footer class="Footer"/>

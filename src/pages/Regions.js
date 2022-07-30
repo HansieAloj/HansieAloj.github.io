@@ -167,6 +167,9 @@ function Regions() {
                 </div>
                 <br/>
             </div>
+
+        <br/><br/>
+        <Footer/>
         </div>
     );
 }

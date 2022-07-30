@@ -1,18 +1,29 @@
-.Contact {
-    background-image: url(../../public/images/contact2.png);
+.ContactUs {
+    background-image: url(../../public/images/contact3.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
+.ContactUsContainer {
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+        /* background-color: rgba(102, 51, 153, 0.2); */
+        color: black;
+        border-radius: 50px;  
+        /* background-image: url(../../public/images/contact3.jpg);
+        background-size: cover;     */
+}
 
 /*
 .banner h1{
     color: white;
 } */
 .contactBody{
-    width: 100%!important;
-    height: 100%!important;
-    /* margin-top:50%; */
+    /* width: 100%!important;
+    height: 100%!important; */
+    margin-top:50%;
     
     /* background:#eee; */
 }
@@ -24,11 +35,11 @@
         
     }
     
-    @media only screen and (max-width:768px) {
+    /* @media only screen and (max-width:768px) {
         .contact {
             margin-bottom: 60px;
         }
-    }
+    } */
     
     .contact input {
         background: #fff;
@@ -112,9 +123,11 @@
     /*START ADDRESS*/
     
     .single_address {
+        text-align: left;
         overflow: hidden;
         margin-bottom: 10px;
         padding-left: 40px;
+        color: white;
     }
     
     @media only screen and (max-width:768px) {
@@ -178,4 +191,19 @@
     }
     .text-center {
         text-align: center!important;
+        color: white;
+    }
+
+    .iconTitle {
+        color: white;
+    }
+
+    .iconInfo {
+        background-color: rgba(191, 85, 236, 0.3);
+        border-radius: 50px;
+    }
+
+    .formInfo {
+        background-color: rgba(140, 20, 252, 0.3);
+        border-radius: 50px;
     }
