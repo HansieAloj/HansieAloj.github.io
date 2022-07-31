@@ -44,33 +44,36 @@ function Contact() {
                 <div class="section-title text-center">
                     <Slide top>
                         <h1>Contact Us</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. F   usce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices.</p>
+                        <p>
+                            Want to get in touch? We'd love to hear from you! Let's Connect!!!<br/>Here's how you can reach us...
+                        </p>
                     </Slide>
                 </div>
                 <div class="row">
                     <div class="col-lg-7 formInfo">
-                        <br /><br />
+                        <br />
                         <Slide left>
                             <div >
                                 {/* <form class="form" name="enq" method="post" action={handleSubmit}> */}
                                 <form class="form">
                                     <div class="row">
                                         <div class="form-group col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required="required" />
+                                            <input type="text" name="name" class="form-control" placeholder="Name" />
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="email" name="email" class="form-control" placeholder="Email" required="required" />
+                                            <input type="email" name="email" class="form-control" placeholder="Email" />
                                         </div>
                                         <br /><br /><br />
                                         <div class="form-group col-md-12">
-                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required="required" />
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject" />
                                         </div>
                                         <br /><br /><br />
                                         <div class="form-group col-md-12">
-                                            <textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+                                            <textarea rows="6" name="message" class="form-control" placeholder="Your Message"></textarea>
                                         </div>
                                         <div class="col-md-12 text-center">
-                                            <button onClick={(e) => setShow(true)} type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Send Message</button>
+                                        <br />
+                                            <button onClick={handleSubmit} type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Send Message</button>
                                         </div>
                                     </div>
                                 </form>
@@ -87,21 +90,21 @@ function Contact() {
                     </div>
 
                     <div class="col-lg-5 iconInfo">
-                        <br /><br />
+                        <br />
                         <div class="single_address">
                             <i class="fa fa-map-marker"></i>
                             <h4 class="iconTitle"><Slide left>Our Address</Slide></h4>
-                            <p><Slide left>3481 Melrose Place, Beverly Hills</Slide></p>
+                            <p><Slide left>New Street, Mumbai, India</Slide></p>
                         </div>
                         <div class="single_address">
                             <i class="fa fa-envelope"></i>
                             <h4 class="iconTitle"><Slide left>Send your message</Slide></h4>
-                            <p><Slide left>Info@example.com</Slide></p>
+                            <p><Slide left>contact@virtualtour.com</Slide></p>
                         </div>
                         <div class="single_address">
                             <i class="fa fa-phone"></i>
                             <h4 class="iconTitle"><Slide left>Call us on</Slide></h4>
-                            <p><Slide left>(+1) 517 397 7100</Slide></p>
+                            <p><Slide left>(+91) 9990000999</Slide></p>
                         </div>
                         <div class="single_address">
                             <i class="fa fa-clock-o"></i>

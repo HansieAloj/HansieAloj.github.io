@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import '../components/Login.css';
 import classes from '../components/Login.module.css';
 
 
@@ -24,7 +23,6 @@ function Register() {
                 <div class={classes.container}>
                     {/* <label for="show" class="fa fa-arrow-left" title="back" onClick={(e)=>console.log("closed")}></label> */}
                     <div class={classes.text}>
-                        <br />
                         Register
                     </div>
                     {/* <form action={handleSubmit}> */}

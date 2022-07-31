@@ -49,9 +49,9 @@ function About() {
 					<div class="row">
 						<Fade right>
 							<div class="col-sm-8">
-								<h2 class="divHeadings">About Company Page</h2><br />
-								<h4 class="divHeadings">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br />
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<h2 class="divHeadings">About Our Site</h2><br />
+								<h4 class="divHeadings">At Virtual Tour, our first and foremost endeavour is to put you at the centre of our universe. Only when we completely understand your idea of travel, we start weaving your personalised virtual travel content. Our site experts are there to guide you at every step. Our inspiration is to push the boundaries of experiential engagement while showcasing the finest of cultural experiences & personal immersions.</h4><br />
+								<p>Join the world’s first online travel with Virtual Tour – destined to become the “New Normal” in a Post-Pandemic, cleaner, greener, more responsible future. Discover Climate Friendly Travel and how it fits with the Sustainable Development Goals and the Paris Climate Agreement.<br/>Through travel, we connect people to positive experiences enabling them to see the world differently.</p>
 							</div>
 							<div class="col-sm-4">
 								<span class="glyphicon glyphicon-signal logo"></span>
@@ -68,12 +68,10 @@ function About() {
 							</Fade>
 						</div>
 						<div class="col-sm-6">
-							<br />
 							<Fade left>
 								<h2>Our Values</h2><br />
-								<h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br />
-								<p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<h4><strong>MISSION:</strong> Virtual Travel is a provider of competency-based expeditions, multi-theme activities, and sustainable tourism projects online. In line with transformation in this sector and relevant to those who aim to pursue a quality experience in the tourism. We actively seek the continual improvement of performance and quality.</h4><br />
+								<p><strong>VISION:</strong> We believe that Virtual tourism should help improve the satisfaction and experience of tourist. We aim to be a recognized and certified program by 2025.</p>
 							</Fade>
 						</div>
 					</div>
@@ -86,7 +84,7 @@ function About() {
 						Support plays a huge role in any Successful journey. It’s the basis on which helps one be able to stand on their own two feet. Without a strong support system behind us, it’s easier to waver and crack under pressure. That’s why we are so grateful to be able to have an amazing crowd of support stand behind us.
 					</Fade></h4>
 					<h4 class="divHeadings"><Fade left>
-						It will be really helpful for us if you follow us on our Social Media handles so that we can reach to you and many others! <br />Please click the below button to do so:
+						It will be really helpful for us if you follow us on our Social Media handles so that we can reach to you and many others! <br />Please click the below buttons to do so:
 					</Fade></h4>
 
 					<Fade left>
@@ -109,9 +107,9 @@ function About() {
 					
 					<div class="d-flex justify-content-center">
 						<Alert show={show} hidden={dismiss} variant="success">
-							<Alert.Heading>Subscribed to News Letter!</Alert.Heading>
+							<Alert.Heading>Subscribed to Newsletter!</Alert.Heading>
 							<p>
-								You have Successfully Subscribed to our News Letter.<br/>We Appreciate your gesture and it means a lot to us!<br/>Thank you!!!
+								You have Successfully Subscribed to our Newsletter.<br/>We Appreciate your gesture and it means a lot to us!<br/>Thank you!!!
 							</p>
 							<Button variant="outline-success" onClick={(e)=>setDismiss(true)}>Dismiss</Button>
 						</Alert>
@@ -122,10 +120,10 @@ function About() {
 
 					<div hidden={show}>
 						<h2 class="divHeadings"><Fade left>
-							News Letter</Fade></h2>
+							Newsletter</Fade></h2>
 						<h4 class="divHeadings"><Fade left>
 
-							If you are loving the experience so far, Please Do Subscribe to our News Letter so that you never miss any update!
+							If you are loving the experience so far, Please Do Subscribe to our Newsletter so that you never miss any update!
 						</Fade></h4>
 
 						<Fade left>

@@ -24,6 +24,7 @@ import Jello from 'react-reveal/Jello';
 import Flip from 'react-reveal/Flip';
 import Reveal from 'react-reveal/Reveal';
 import Slide from 'react-reveal/Slide';
+import Flash from 'react-reveal/Flash';
 
 
 
@@ -36,11 +37,10 @@ function Regions() {
         <div class="Regions">
             <br />
             <div class="regionDiv">
-                <br />
 
-                <Tada>
-                <h1 class="banner">Incredible India!</h1>
-                </Tada>
+                
+                <h1 class="banner"><Flash>Incredible India!</Flash></h1>
+                
 
                 <br />
 
@@ -108,17 +108,15 @@ function Regions() {
                     <br />
                     </Slide>
                 </div>
-                <br />
             </div>
             <br />
 
 
             <br />
             <div class="regionDiv">
-                <br />
-                <Tada>
-                <h1 class="banner">America</h1>
-                </Tada>
+                
+                <h1 class="banner"><Flash>America</Flash></h1>
+                
 
                 <br />
                 <Zoom>
@@ -187,7 +185,6 @@ function Regions() {
                     <br />
                     </Slide>
                 </div>
-                <br />
             </div>
 
             <br /><br />

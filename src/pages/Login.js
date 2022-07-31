@@ -18,35 +18,38 @@ function Login() {
     }
 
     return (
-        <div class={classes.Login}>
-            <div class={classes.center}>
-                <div class={classes.container}>
-                    {/* <label for="show" class="fa fa-arrow-left" title="back" onClick={(e)=>console.log("closed")}></label> */}
-                    <div class={classes.text}>Login</div>
-                    {/* <form action={handleSubmit}> */}
-                    <form>
-                        <div class={classes.data}>
-                            <label>Username</label>
-                            <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} required />
-                        </div>
-                        <div class={classes.data}>
-                            <label>Password</label>
-                            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                        </div>
-                        <div class={classes.forgotPass}>
-                            <a href="#">Forgot Password?</a></div>
-                        <div class={classes.btn}>
-                            <div class={classes.inner}>
-                            </div>
-                            <NavLink to="/"><button type="submit">login</button></NavLink>
-                        </div>
-                        <div class={classes.signupLink}>
-                            Not a member? <NavLink to="/register">Signup now</NavLink></div>
+            <div class={classes.Login}>
 
-                    </form>
-                </div>
+                {/* <div class={classes.center}> */}
+
+                    <div class={classes.container}>
+                        {/* <label for="show" class="fa fa-arrow-left" title="back" onClick={(e)=>console.log("closed")}></label> */}
+                        <div class={classes.text}>Login</div>
+                        {/* <form action={handleSubmit}> */}
+                        <form>
+                            <div class={classes.data}>
+                                <label>Username</label>
+                                <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} required />
+                            </div>
+                            <div class={classes.data}>
+                                <label>Password</label>
+                                <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                            </div>
+                            <div class={classes.forgotPass}>
+                                <a href="#">Forgot Password?</a></div>
+                            <div class={classes.btn}>
+                                <div class={classes.inner}>
+                                </div>
+                                <NavLink to="/"><button type="submit">login</button></NavLink>
+                            </div>
+                            <div class={classes.signupLink}>
+                                Not a member? <NavLink to="/register">Signup now</NavLink></div>
+
+                        </form>
+                    </div>
+                {/* </div> */}
             </div>
-        </div>
+
     );
 }
 

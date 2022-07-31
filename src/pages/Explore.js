@@ -15,6 +15,7 @@ import Tada from 'react-reveal/Tada';
 import Wobble from 'react-reveal/Wobble';
 import Spin from 'react-reveal/Spin';
 import Zoom from 'react-reveal/Zoom';
+import Flash from 'react-reveal/Flash';
 
 
 
@@ -211,9 +212,9 @@ function Explore() {
             </Spin>
         </Row> */}
 
-        <Tada>
-        <h1 class="banner">Seven Wonders of the World</h1>
-        </Tada>
+        
+        <h1 class="banner"><Flash>Seven Wonders of the World</Flash></h1>
+        
 
         <Zoom>
         <ButtonGroup aria-label="Quick Traverse" className="ButtonGroup">
@@ -273,9 +274,9 @@ function Explore() {
 
         <br/><br/><br/><br/>
 
-        <Tada>
-        <h1 class="banner">Seven Wonders of Nature</h1>
-        </Tada>
+        
+        <h1 class="banner"><Flash>Seven Wonders of Nature</Flash></h1>
+        
 
         <ButtonGroup aria-label="Quick Traverse" className="ButtonGroup">
             <Button variant="dark" href='#auroraBorealis'>Aurora Borealis</Button>
