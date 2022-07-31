@@ -186,6 +186,84 @@ function Regions() {
                     </Slide>
                 </div>
             </div>
+            <br/>
+
+
+            <br />
+            <div class="regionDiv">
+                
+                <h1 class="banner"><Flash>New Zealand</Flash></h1>
+                
+
+                <br />
+                <Zoom>
+                <div class="video">
+                    <div className="video-responsive">
+                        <iframe
+                            width="853"
+                            height="480"
+                            src="https://www.youtube.com/embed/vtxVK3sbZ0o"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            title="Embedded youtube"
+                        />
+                    </div>
+                </div>
+                </Zoom>
+
+                <br />
+                <div class="info">
+                    <Slide left>
+                    <br />
+                    <Button className='buttonAcc' variant="dark" href='https://www.gousa.in/' target='_blank'><b>More Info</b></Button>
+                    <br />
+
+                    <br />
+                    <Accordion defaultActiveKey="0" className="accordian">
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header><b>Why Travel to New Zealand?</b></Accordion.Header>
+                            <Accordion.Body className="accordianItem">
+                            Even if you haven’t seen the The Lord of the Rings or The Hobbit films, you’ll know New Zealand is incredibly scenic. The South Island is lined with exquisite mountain ranges, glaciers, and lush forestry while the North is renowned for its breathtaking coastlines, geothermal treasures, and remarkable glowworm caves. And this is just a quick taster — you need to see the majestic landscape from up close to truly appreciate its beauty.                                <br /><br />
+                                It doesn't matter if you're visiting for the first time or returning for another go, you're sure to leave with plenty of unforgettable moments. It is the perfect holiday destination and here are just 10 reasons to start planning your next trip:
+                                <br /><br />
+                                <ul>
+                                    <li>The remarkable Maori culture</li>
+                                    <li>New Zealand friendliness is hard to beat</li>
+                                    <li>The world-famous vineyards</li>
+                                    <li>It’s jam-packed with adventure activities</li>
+                                    <li>Hikers will relish the Great Walks</li>
+                                    <li>There’s something for every season</li>
+                                    <li>An incredibly diverse wildlife awaits</li>
+                                    <li>The glistening lakes</li>
+                                    <li>The local festivals</li>
+                                </ul>
+                            </Accordion.Body>
+                        </Accordion.Item>
+
+                        <Accordion.Item eventKey="2">
+                            <Accordion.Header><b>Did You Know???</b></Accordion.Header>
+                            <Accordion.Body className="accordianItem">
+                                <ul>
+                                    <li>New Zealand is the First Country to see the Sunrise!</li>
+                                    <li>New Zealand is the first country with universal suffrage</li>
+                                    <li>You can pay with hobbit money</li>
+                                    <li>30% of the country is a national reserve</li>
+                                    <li>It is the first country to give Women the Vote in 1893</li>
+                                    <li>More sheep than people</li>
+                                    <li>Dunedin has the steepest road in the world</li>
+                                    <li>There are three official languages</li>
+                                    <li>It was the last country in the world to be inhabited by humans</li>
+                                </ul>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                    <br />
+                    </Slide>
+                </div>
+            </div>
+
+
 
             <br /><br />
             <Footer />
