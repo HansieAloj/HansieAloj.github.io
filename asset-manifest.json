@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.03c60713.css",
-    "main.js": "/static/js/main.29d7a748.js",
+    "main.css": "/static/css/main.8184dfc8.css",
+    "main.js": "/static/js/main.22529ec4.js",
     "static/media/auroraBorealis.jpg": "/static/media/auroraBorealis.ad90efb366ecfe8eccab.jpg",
     "static/media/greatBarrierReef3.png": "/static/media/greatBarrierReef3.d1667b15729fdb2c84fd.png",
     "static/media/auroraBorealis3.jpg": "/static/media/auroraBorealis3.cef7b097b6b494664a53.jpg",
@@ -42,6 +42,7 @@
     "static/media/greatBarrierReef2.jpg": "/static/media/greatBarrierReef2.6ae401a9faab389cfd72.jpg",
     "static/media/victoriaFalls3.jpg": "/static/media/victoriaFalls3.7ebe30e80769a7cbf65c.jpg",
     "static/media/christTheRedeemer.jpg": "/static/media/christTheRedeemer.b0185d68b023e314ccee.jpg",
+    "static/media/louvreMuseum.jpg": "/static/media/louvreMuseum.1bcbb93493a25c9df591.jpg",
     "static/media/statueOfLiberty.jpg": "/static/media/statueOfLiberty.b70e933b7501d7229054.jpg",
     "static/media/auroraBorealis2.jpg": "/static/media/auroraBorealis2.2e5b523ace999c74c5c8.jpg",
     "static/media/paricutin2.jpg": "/static/media/paricutin2.10436e9bb8335f99fafe.jpg",
@@ -77,11 +78,11 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.03c60713.css.map": "/static/css/main.03c60713.css.map",
-    "main.29d7a748.js.map": "/static/js/main.29d7a748.js.map"
+    "main.8184dfc8.css.map": "/static/css/main.8184dfc8.css.map",
+    "main.22529ec4.js.map": "/static/js/main.22529ec4.js.map"
   },
   "entrypoints": [
-    "static/css/main.03c60713.css",
-    "static/js/main.29d7a748.js"
+    "static/css/main.8184dfc8.css",
+    "static/js/main.22529ec4.js"
   ]
 }
