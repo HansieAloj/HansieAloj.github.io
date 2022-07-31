@@ -18,6 +18,14 @@ import MultiCarouselComponent from '../components/MultiCarousel.js';
 
 import Accordion from 'react-bootstrap/Accordion';
 
+import Zoom from 'react-reveal/Zoom';
+import Tada from 'react-reveal/Tada';
+import Jello from 'react-reveal/Jello';
+import Flip from 'react-reveal/Flip';
+import Reveal from 'react-reveal/Reveal';
+import Slide from 'react-reveal/Slide';
+
+
 
 
 
@@ -26,12 +34,17 @@ function Regions() {
     return (
 
         <div class="Regions">
-            <br/>
+            <br />
             <div class="regionDiv">
-            <br/>
-            <h1 class="banner">Incredible India!</h1>
+                <br />
 
-                <br/>
+                <Tada>
+                <h1 class="banner">Incredible India!</h1>
+                </Tada>
+
+                <br />
+
+                <Zoom>
                 <div class="video">
                     <div className="video-responsive">
                         <iframe
@@ -45,20 +58,22 @@ function Regions() {
                         />
                     </div>
                 </div>
+                </Zoom>
 
-                <br/>
+                <br />
                 <div class="info">
-                    <br/>
+                <Slide left>
+                    <br />
                     <Button className='buttonAcc' variant="dark" href='https://www.incredibleindia.org/content/incredible-india-v2/en.html' target='_blank'><b>More Info</b></Button>
-                    <br/>
+                    <br />
 
-                    <br/>
+                    <br />
                     <Accordion defaultActiveKey="0" className="accordian">
                         <Accordion.Item eventKey="1">
                             <Accordion.Header><b>Why Travel to India?</b></Accordion.Header>
                             <Accordion.Body className="accordianItem">
-                            India is a land that has a rich ancient history and deep cultural roots. A visit to India is unlike any other place one can visit in the world. Indian customs and traditions have been revered by most of the travelers who have visited the country and the vast range of geographical locations in India has made it one of the top tourist destinations. While traveling in India has often being stereotyped by the lack of civic facilities and is considered more of a backpacker destination, it can be done lavishly as well as cheaply. Here are 10 reasons why you might want to visit India.
-                            <br/><br/>
+                                India is a land that has a rich ancient history and deep cultural roots. A visit to India is unlike any other place one can visit in the world. Indian customs and traditions have been revered by most of the travelers who have visited the country and the vast range of geographical locations in India has made it one of the top tourist destinations. While traveling in India has often being stereotyped by the lack of civic facilities and is considered more of a backpacker destination, it can be done lavishly as well as cheaply. Here are 10 reasons why you might want to visit India.
+                                <br /><br />
                                 <ul>
                                     <li>Huge Number of Tourist Places</li>
                                     <li>Incredible HISTORY</li>
@@ -77,32 +92,36 @@ function Regions() {
                             <Accordion.Header><b>Did You Know???</b></Accordion.Header>
                             <Accordion.Body className="accordianItem">
                                 <ul>
-                                    <li>INDIA HAS THE SECOND HIGHEST POPULATION IN THE WORLD</li>
-                                    <li>THE CITY OF VARANASI IS BELIEVED TO BE ONE OF THE OLDEST LIVING CITIES IN THE WORLD</li>
-                                    <li>CHENAB BRIDGE IS THE HIGHEST RAIL BRIDGE IN THE WORLD</li>
-                                    <li>INDIA IS HOME TO THE WETTEST INHABITED PLACE ON EARTH</li>
-                                    <li>ABOUT 70% OF THE WORLD’S SPICES COME FROM INDIA</li>
-                                    <li>THE HIGHEST CRICKET GROUND IN THE WORLD IS FOUND HERE</li>
-                                    <li>THE BENGAL TIGER IS INDIA’S NATIONAL ANIMAL</li>
-                                    <li>KUMBH MELA GATHERING VISIBLE FROM SPACE</li>
-                                    <li>INDIA WAS THE FIRST COUNTRY TO MINE DIAMONDS</li>
+                                    <li>India Has the Second Highest Population in the World</li>
+                                    <li>The City of Varanasi is Believed to Be One of the Oldest Living Cities in the World</li>
+                                    <li>Chenab Bridge is the Highest Rail Bridge in the World</li>
+                                    <li>India is Home to the Wettest Inhabited Place on Earth</li>
+                                    <li>About 70% of the World’s Spices Come From India</li>
+                                    <li>The Highest Cricket Ground in the World is Found Here</li>
+                                    <li>The Bengal Tiger is India’s National Animal</li>
+                                    <li>Kumbh Mela Gathering Visible From Space</li>
+                                    <li>India Was the First Country to Mine Diamonds</li>
                                 </ul>
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
-                    <br/>
+                    <br />
+                    </Slide>
                 </div>
-                <br/>
+                <br />
             </div>
-            <br/>
+            <br />
 
 
-            <br/>
+            <br />
             <div class="regionDiv">
-            <br/>
-            <h1 class="banner">America</h1>
+                <br />
+                <Tada>
+                <h1 class="banner">America</h1>
+                </Tada>
 
-                <br/>
+                <br />
+                <Zoom>
                 <div class="video">
                     <div className="video-responsive">
                         <iframe
@@ -116,22 +135,24 @@ function Regions() {
                         />
                     </div>
                 </div>
+                </Zoom>
 
-                <br/>
+                <br />
                 <div class="info">
-                    <br/>
+                    <Slide left>
+                    <br />
                     <Button className='buttonAcc' variant="dark" href='https://www.gousa.in/' target='_blank'><b>More Info</b></Button>
-                    <br/>
+                    <br />
 
-                    <br/>
+                    <br />
                     <Accordion defaultActiveKey="0" className="accordian">
                         <Accordion.Item eventKey="1">
                             <Accordion.Header><b>Why Travel to USA?</b></Accordion.Header>
                             <Accordion.Body className="accordianItem">
-                            The USA is known for its iconic landmarks – The Statue of Liberty, Hollywood Sign, Golden Gate Bridge – but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty. That's 50 states that serve up unique holiday experiences and provide endless options for every type of traveller. 
-                            <br/><br/>
-                            It doesn't matter if you're visiting for the first time or returning for another go, you're sure to leave with plenty of unforgettable moments. It is the perfect holiday destination and here are just 10 reasons to start planning your next trip:  
-                                <br/><br/>
+                                The USA is known for its iconic landmarks – The Statue of Liberty, Hollywood Sign, Golden Gate Bridge – but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty. That's 50 states that serve up unique holiday experiences and provide endless options for every type of traveller.
+                                <br /><br />
+                                It doesn't matter if you're visiting for the first time or returning for another go, you're sure to leave with plenty of unforgettable moments. It is the perfect holiday destination and here are just 10 reasons to start planning your next trip:
+                                <br /><br />
                                 <ul>
                                     <li>The National Parks</li>
                                     <li>The Road Trips</li>
@@ -163,13 +184,14 @@ function Regions() {
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
-                    <br/>
+                    <br />
+                    </Slide>
                 </div>
-                <br/>
+                <br />
             </div>
 
-        <br/><br/>
-        <Footer/>
+            <br /><br />
+            <Footer />
         </div>
     );
 }

@@ -46,7 +46,7 @@ class CarouselOffcanvasComponent extends Component {
             {myObj.img.map((i) => {
                 return(
                     <Carousel.Item>
-                        <Rotate right>
+                        <Rotate bottom right>
                         <img
                         className="d-block w-100 images"
                         src={i}

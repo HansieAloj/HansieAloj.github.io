@@ -7,7 +7,7 @@ import { BrowserRouter, NavLink, Routes, Route } from 'react-router-dom';
 import Header from './components/Navbar';
 import Home from './pages/Home';
 import Explore from './pages/Explore';
-import About1 from './pages/About1';
+import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -39,7 +39,7 @@ const routing = (
         <Route exact path="/" element={<Home/>} />
         <Route path="/explore" element={<Explore/>} />
         <Route path="/regions" element={<Regions/>} />
-        <Route path="/about" element={<About1/>} />
+        <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />

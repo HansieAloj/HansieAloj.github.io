@@ -38,15 +38,15 @@ import niagaraFalls from "../images/topRated/niagaraFalls.jpg"
 function Home() {
 
     var myObject = {
-        0 : {img: img0, title: "Islands", desc:'No matter where they are in the world, islands make everyone happy and calm.'},
-        1 : {img: img1, title: "Mountains", desc:'“The mountains are calling, and I must go.” John Muir perfectly sums up our feelings about these majestic natural wonders. Mountains have always been a source of awe and beauty, and sometimes we don\'t have the words to capture how much we admire them.'},
-        2 : {img: img2, title: "Beaches", desc:'There’s nothing like a relaxing day at the beach to soak up all your worries. Just closing your eyes and imagining the soft sand caressing your toes as gentle waves lap the shore and the sun shines warmly down is enough to bring about a feeling of tranquillity.'},
-        4 : {img: img3, title: "Waterfalls", desc:'Roaring and powerful, yet serene and calming, waterfalls are one of nature’s most magical creations. “There\'s no better place to find yourself than sitting by a waterfall and listening to its music” ― Roland R Kemler'},
+        0: { img: img0, title: "Islands", desc: 'No matter where they are in the world, islands make everyone happy and calm.' },
+        1: { img: img1, title: "Mountains", desc: '“The mountains are calling, and I must go.” John Muir perfectly sums up our feelings about these majestic natural wonders. Mountains have always been a source of awe and beauty, and sometimes we don\'t have the words to capture how much we admire them.' },
+        2: { img: img2, title: "Beaches", desc: 'There’s nothing like a relaxing day at the beach to soak up all your worries. Just closing your eyes and imagining the soft sand caressing your toes as gentle waves lap the shore and the sun shines warmly down is enough to bring about a feeling of tranquillity.' },
+        4: { img: img3, title: "Waterfalls", desc: 'Roaring and powerful, yet serene and calming, waterfalls are one of nature’s most magical creations. “There\'s no better place to find yourself than sitting by a waterfall and listening to its music” ― Roland R Kemler' },
     };
 
-  return (
-    <div class="Home">
-        {/* <div class="Header">
+    return (
+        <div class="Home">
+            {/* <div class="Header">
             <Navbar bg="light" expand="lg">
             <Container fluid>
             <Navbar.Brand href="#" active>
@@ -108,91 +108,164 @@ function Home() {
             </Navbar>
         </div> */}
 
-        <Tada>
-        <h1 class="banner">Popular Landscapes</h1>
-        </Tada>
-        <br/>
+            <Tada>
+                <h1 class="banner">Popular Landscapes</h1>
+            </Tada>
+            <br />
 
-        <Zoom left>
-        <div class="Carousel">
-            {/* <CarouselComponent src="./images/explore/SevenWonders/tajMahal1.jpg"/> */}
-            <CarouselComponent obj={myObject}/>
+            <Zoom right>
+                <div class="Carousel">
+                    {/* <CarouselComponent src="./images/explore/SevenWonders/tajMahal1.jpg"/> */}
+                    <CarouselComponent obj={myObject} />
+                </div>
+            </Zoom>
+
+            <br /><br />
+            <Tada>
+                <h1 class="banner">Top Rated Places</h1>
+            </Tada>
+
+            {/* <div class="Cards">
+                <LightSpeed left>
+
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={statueOfLiberty} class="cardImage" />
+                        <Card.Body>
+                            <Card.Title>The Statue of Liberty</Card.Title>
+                            <Card.Text>
+                                The Statue of Liberty is one of the most well-known and beloved monuments in America. It stands to welcome in immigrants to New York Harbor and to let people who are returning home know that they have reached America.
+                            </Card.Text>
+                            <Button variant="primary" target="_blank" href="https://earth.google.com/web/@40.6892494,-74.0445004,41.99810379a,777.91377107d,35y,0h,45t,0r/data=ChAaDgoIL20vMDcycDgYAiABKAI">
+                                View 360°
+                            </Button>
+                            <div class="space" />
+                            <Button variant="info">
+                                Rating <Badge bg="dark">4.7⭐</Badge>
+                                <span className="visually-hidden">unread messages</span>
+                            </Button>
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={tajMahal} class="cardImage" />
+                        <Card.Body>
+                            <Card.Title>Taj Mahal</Card.Title>
+                            <Card.Text>
+                                Taj Mahal represents the finest architectural and artistic achievement through perfect harmony and excellent craftsmanship. It is a masterpiece of architectural style in conception, treatment and execution.
+                            </Card.Text>
+                            <Button variant="primary" target="_blank" href="https://earth.google.com/web/@27.173059,78.042134,157.84889705a,471.54638365d,35y,0h,59.99245526t,0r/data=CjISMBIgMWNlYzBmZjgyNTA0MTFlN2JlYTcxN2E0Njc3ZDAzZDUiDHNwbGFzaHNjcmVlbg">
+                                View 360°
+                            </Button>
+
+                            <div class="space" />
+
+                            <Button variant="info">
+                                Rating <Badge bg="dark">4.6⭐</Badge>
+                                <span className="visually-hidden">unread messages</span>
+                            </Button>
+                        </Card.Body>
+                    </Card>
+
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={niagaraFalls} class="cardImage" />
+                        <Card.Body>
+                            <Card.Title>Niagara Falls</Card.Title>
+                            <Card.Text>
+                                What makes Niagara Falls so impressive is the amount of water flowing over. Most of the tallest falls in the world have very little water flowing over them. It's the combination of height and volume that makes Niagara Falls so breathtaking.
+                            </Card.Text>
+                            <Button variant="primary" className="CardButton" target="_blank" href="https://earth.google.com/web/search/Niagara+Falls,+Niagara+Falls,+NY,+USA/@43.0828162,-79.0741629,98.65325994a,746.72019975d,35y,0h,45t,0r/data=CpABGmYSYAolMHg4OWQzNDMwNzQxMmQ3YWU5OjB4MjliZTFkMWU2ODljZTM1YhkcSqO4mYpFQCHlhL8Vv8RTwColTmlhZ2FyYSBGYWxscywgTmlhZ2FyYSBGYWxscywgTlksIFVTQRgCIAEiJgokCeD32gjAi0VAEY4exOF4ikVAGW7rfrWhxFPAIWlhIkB4xlPAKAI">
+                                View 360°
+                            </Button>
+                            <div class="space" />
+                            <Button variant="info">
+                                Rating <Badge bg="dark">4.8⭐</Badge>
+                                <span className="visually-hidden">unread messages</span>
+                            </Button>
+                        </Card.Body>
+                    </Card>
+                </LightSpeed>
+
+                <br /><br />
+
+
+            </div> */}
+
+            <div class="Cards">
+                    <div id="cards_landscape_wrap-2">
+                        <div class="containers">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                    <a href="">
+                                        <div class="card-flyer">
+                                            <div class="text-box">
+                                                <div class="image-box">
+                                                    <img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+                                                </div>
+                                                <div class="text-container">
+                                                    <h6>Title 01</h6>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                    <a href="">
+                                        <div class="card-flyer">
+                                            <div class="text-box">
+                                                <div class="image-box">
+                                                    <img src="https://cdn.pixabay.com/photo/2018/04/09/19/55/low-poly-3305284_960_720.jpg" alt="" />
+                                                </div>
+                                                <div class="text-container">
+                                                    <h6>Title 02</h6>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                    <a href="">
+                                        <div class="card-flyer">
+                                            <div class="text-box">
+                                                <div class="image-box">
+                                                    <img src="https://cdn.pixabay.com/photo/2018/04/06/13/46/poly-3295856_960_720.png" alt="" />
+                                                </div>
+
+                                                <div class="text-container">
+                                                    <h6>Title 03</h6>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                    <a href="">
+                                        <div class="card-flyer">
+                                            <div class="text-box">
+                                                <div class="image-box">
+                                                    <img src="https://cdn.pixabay.com/photo/2018/03/30/15/12/dog-3275593_960_720.jpg" alt="" />
+                                                </div>
+                                                <div class="text-container">
+                                                    <h6>Title 04</h6>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        
+            <Footer class="Footer" />
         </div>
-        </Zoom>
-
-        <br/><br/>
-        <Tada>
-        <h1 class="banner">Top Rated Places</h1>
-        </Tada>
-
-        <div class="Cards">
-        <LightSpeed left>
-
-
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={statueOfLiberty} class="cardImage"/>
-            <Card.Body>
-                <Card.Title>The Statue of Liberty</Card.Title>
-                <Card.Text>
-                    The Statue of Liberty is one of the most well-known and beloved monuments in America. It stands to welcome in immigrants to New York Harbor and to let people who are returning home know that they have reached America.
-                </Card.Text>
-                <Button variant="primary" target="_blank" href="https://earth.google.com/web/@40.6892494,-74.0445004,41.99810379a,777.91377107d,35y,0h,45t,0r/data=ChAaDgoIL20vMDcycDgYAiABKAI">
-                    View 360°
-                </Button>
-                <div class="space"/>
-                <Button variant="info">
-                    Rating <Badge bg="dark">4.7⭐</Badge>
-                    <span className="visually-hidden">unread messages</span>
-                </Button>
-            </Card.Body>
-            </Card>
-
-            <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={tajMahal} class="cardImage"/>
-            <Card.Body>
-                <Card.Title>Taj Mahal</Card.Title>
-                <Card.Text>
-                    Taj Mahal represents the finest architectural and artistic achievement through perfect harmony and excellent craftsmanship. It is a masterpiece of architectural style in conception, treatment and execution.                
-                </Card.Text>
-                <Button variant="primary" target="_blank" href="https://earth.google.com/web/@27.173059,78.042134,157.84889705a,471.54638365d,35y,0h,59.99245526t,0r/data=CjISMBIgMWNlYzBmZjgyNTA0MTFlN2JlYTcxN2E0Njc3ZDAzZDUiDHNwbGFzaHNjcmVlbg">
-                    View 360°
-                </Button>
-
-                <div class="space"/>
-
-                {/* <OverlayTrigger placement="right" delay={{ show: 250, hide: 400 }} overlay={<Tooltip>Simple tooltip</Tooltip>}> */}
-                <Button variant="info">
-                    Rating <Badge bg="dark">4.6⭐</Badge>
-                    <span className="visually-hidden">unread messages</span>
-                </Button>
-                {/* </OverlayTrigger> */}
-            </Card.Body>
-            </Card>
-
-            <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={niagaraFalls} class="cardImage"/>
-            <Card.Body>
-                <Card.Title>Niagara Falls</Card.Title>
-                <Card.Text>
-                    What makes Niagara Falls so impressive is the amount of water flowing over. Most of the tallest falls in the world have very little water flowing over them. It's the combination of height and volume that makes Niagara Falls so breathtaking.                
-                </Card.Text>
-                <Button variant="primary" className="CardButton" target="_blank" href="https://earth.google.com/web/search/Niagara+Falls,+Niagara+Falls,+NY,+USA/@43.0828162,-79.0741629,98.65325994a,746.72019975d,35y,0h,45t,0r/data=CpABGmYSYAolMHg4OWQzNDMwNzQxMmQ3YWU5OjB4MjliZTFkMWU2ODljZTM1YhkcSqO4mYpFQCHlhL8Vv8RTwColTmlhZ2FyYSBGYWxscywgTmlhZ2FyYSBGYWxscywgTlksIFVTQRgCIAEiJgokCeD32gjAi0VAEY4exOF4ikVAGW7rfrWhxFPAIWlhIkB4xlPAKAI">
-                    View 360°
-                </Button>
-                <div class="space"/>
-                <Button variant="info">
-                    Rating <Badge bg="dark">4.8⭐</Badge>
-                    <span className="visually-hidden">unread messages</span>
-                </Button>
-            </Card.Body>
-            </Card>
-            </LightSpeed>
-
-        </div>
-
-        <Footer class="Footer"/>
-    </div>
-  );
+    );
 }
 
 export default Home;

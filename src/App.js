@@ -8,7 +8,6 @@ import Explore from './pages/Explore';
 import Regions from './pages/Regions';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import About1 from './pages/About1';
 
 
 
@@ -21,7 +20,7 @@ function App() {
 	  {/* <Explore/> */}
     {/* <Regions/> */}
     {/* <About/> */}
-    {/* <About1/> */}
+    {/* <About/> */}
     {/* <Contact/> */}
     </div>
   );

@@ -14,6 +14,7 @@ import React from 'react';
 import Tada from 'react-reveal/Tada';
 import Wobble from 'react-reveal/Wobble';
 import Spin from 'react-reveal/Spin';
+import Zoom from 'react-reveal/Zoom';
 
 
 
@@ -214,6 +215,7 @@ function Explore() {
         <h1 class="banner">Seven Wonders of the World</h1>
         </Tada>
 
+        <Zoom>
         <ButtonGroup aria-label="Quick Traverse" className="ButtonGroup">
             <Button variant="dark" href='#greatWall'>Great Wall of China</Button>
             <Button variant="dark" href='#chichen'>Chichén Itzá</Button>
@@ -223,6 +225,7 @@ function Explore() {
             <Button variant="dark" href='#colosseum'>Colosseum</Button>
             <Button variant="dark" href='#tajMahal'>Taj Mahal</Button>
         </ButtonGroup>
+        </Zoom>
 
         <br/>
 
@@ -270,7 +273,9 @@ function Explore() {
 
         <br/><br/><br/><br/>
 
+        <Tada>
         <h1 class="banner">Seven Wonders of Nature</h1>
+        </Tada>
 
         <ButtonGroup aria-label="Quick Traverse" className="ButtonGroup">
             <Button variant="dark" href='#auroraBorealis'>Aurora Borealis</Button>
